@@ -1,0 +1,139 @@
+.banner {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    background-image: url('../../assets/banner-image.png');
+    background-position: center;
+    background-size: cover;
+    height: 793px;
+    &_inner {
+        width: 100%;
+        padding: 0 70px 52px;
+        color: #FFFFFF;
+    }
+    &_lower {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 32px;
+        border-top: 2px solid rgba(255, 255, 255, 0.3);
+        &_calculates {
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            a {
+                color: #FFFFFF;
+                font-size: 12px;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        &_calculate  {
+            & + & {
+                border-left: 2px solid rgba(255, 255, 255, 0.3);;
+                padding-left: 38px;
+                margin-left: 38px;
+            }
+        }
+        &_buttons {
+            .button + .button {
+                margin-left: 24px;
+            }
+        }
+    }
+    &_upper {
+        margin-bottom: 40px;
+        &_name {
+            font-size: 28px;
+        }
+        &_series {
+            font-size: 54px;
+        }
+    }
+    &_image {
+
+    }
+}
+.cost {
+    font-weight: bold;
+    font-size: 24px;
+    &._with-question {
+        &:after {
+            content: '';
+            width: 20px;
+            position: absolute;
+            margin-left: 10px;
+            margin-top: 3px;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-image: url('../../assets/question-circle.svg');
+        }
+    }
+}
+.banner_image {
+
+}
+@media (max-width: 1024px) {
+    .banner {
+        &_inner {
+            padding: 48px 48px;
+
+        }
+
+        &_lower {
+            &_calculates {
+                .cost {
+                    font-size: 24px;
+                }
+            }
+
+        }
+
+
+    }
+
+}
+@media (max-width: 768px) {
+    .banner {
+        &_inner {
+        }
+
+        &_lower {
+            &_calculates {
+                .cost {
+                    font-size: 24px;
+                }
+            }
+
+        }
+
+
+    }
+
+}
+@media (max-width: 320px) {
+    .banner {
+        &_inner {
+        }
+
+        &_lower {
+            &_calculates {
+                .cost {
+                    font-size: 20px;
+                }
+                a {
+
+                    color: #222222;
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+
+            }
+
+
+        }
+
+
+    }
+}
+
