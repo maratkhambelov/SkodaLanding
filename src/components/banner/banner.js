@@ -6,8 +6,10 @@ export default class Banner extends Component {
   render() {
     return(
       <div className="banner">
+        <div className="banner_image_wrapper">
+          <div className="banner_image"></div>
+        </div>
         <div className="banner_inner">
-          {/*<div className="banner_image"></div>*/}
           <div className="banner_upper">
             <div className="banner_upper_name">
               ŠKODA

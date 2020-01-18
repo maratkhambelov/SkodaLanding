@@ -8,8 +8,7 @@ export default class Tile extends Component {
     return(
       <div className={`tile ${expand ? '_expand' : ''}`}>
         <div className='tile_none'></div>
-        <div  className='tile_background'  style={ { backgroundImage: `url(${image})`} }>
-          {/**/}
+        <div  className='tile_background'  style={ { backgroundImage: ` linear-gradient(rgba(0, 0, 0, 0.3) 50%, rgb(0, 0, 0) 100%), url(${image})`} }>
           <div  className='tile_inner' >
             <div className="tile_text">
               <div className="tile_title">
