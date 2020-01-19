@@ -2,13 +2,9 @@
   padding: 80px 108px;
   max-width: 1440px;
   margin: 0 auto;
-
-
-  // not sure
   display: flex;
   flex-direction: column;
   align-items: center;
-  // not sure
 
   &_title {
     margin-bottom: 24px;
@@ -25,22 +21,28 @@
     font-size: 14px;
     color: #222222;
     text-align: center;
-    //margin: 0 108px; //change later
   }
   &_buttons {
-    //display: flex;
-    //justify-content: space-between;
     .button + .button {
       margin-left: 24px;
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
   .headline {
-    padding: 80px 40px;
+    &_subtitle {
+      width: 100%;
+    }
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 1024px) {
+  .headline {
+    padding: 80px 40px;
+    &_subtitle {
+    }
+  }
+}
+@media (max-width: 768px) {
   .headline {
     padding: 32px 20px;
     &_title {
@@ -52,9 +54,11 @@
       margin-bottom: 32px;
     }
     &_buttons {
-      //display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       .button {
-        width: 180px;
+        width: 192px;
       }
       .button + .button {
         margin-left: 0;
@@ -62,6 +66,6 @@
 
       }
     }
-}
+  }
 
 }

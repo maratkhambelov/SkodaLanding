@@ -21,11 +21,11 @@ export default class Banner extends Component {
           <div className="banner_lower">
             <div className="banner_lower_calculates">
               <div className="banner_lower_calculate">
-                <div> Стоимость от</div>
+                <div className="explaining_text"> Стоимость от</div>
                 <div className="cost">1 454 000 ₽</div>
               </div>
               <div className="banner_lower_calculate">
-                <div> В месяц </div>
+                <div className="explaining_text"> В месяц </div>
                 <div className="cost _with-question">11 900 ₽</div>
                 <a href='/'>Рассчитать кредит</a>
               </div>

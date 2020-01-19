@@ -17,7 +17,7 @@ export default class Button extends Component {
     return(
       <div className={classNames}>
         {icon ? <div className='button_image-wrap'><div className='button_image' ></div></div> : null}
-        {label}
+        <span>{label}</span>
       </div>
     )
   }

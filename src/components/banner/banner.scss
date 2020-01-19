@@ -1,14 +1,7 @@
 .banner {
-    //width: 100%;
-    //display: flex;
-    //align-items: flex-end;
 
-    //height: 793px;
     position: relative;
     &_inner {
-        //width: 100%;
-        //padding: 0 70px 52px;
-
         width: 100%;
         color: #FFFFFF;
         display: flex;
@@ -16,7 +9,7 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        padding-bottom: 5rem; // 50px
+        padding-bottom: 50px;
     }
     &_lower {
         display: flex;
@@ -37,6 +30,9 @@
             }
         }
         &_calculate  {
+            .explaining_text {
+                margin-bottom: 6px;
+            }
             & + & {
                 border-left: 2px solid rgba(255, 255, 255, 0.3);;
                 padding-left: 38px;
@@ -92,57 +88,30 @@
         }
     }
 }
-.banner_image {
 
-}
-
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
     .banner {
-        &_inner {
-
-        }
-
         &_lower {
             margin: 0 48px;
-
             &_calculates {
                 .cost {
                     font-size: 24px;
                 }
             }
-
         }
         &_upper {
             margin: 0 48px 32px 48px;
-
-        }
-
-
-    }
-
-}
-@media (max-width: 1040px) and (min-width: 1024px) {
-    .banner {
-        &_inner {
-
-        }
-
-        &_lower {
-            &_calculate {
-                &+& {
-                    margin-left: 30px;
-                    padding-left: 30px;
-                }
-
-            }
         }
     }
-
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .banner {
+        &_image {
+            background-image: url('../../assets/banner-image-cutted.png');
+        }
         &_inner {
-
+            padding-bottom: 0;
+            margin-bottom: 32px;
             color: #494949;
             position: inherit;
             width: 100%;
@@ -155,17 +124,19 @@
             padding-top: 20px;
             display: flex;
             flex-direction: column;
-        &_calculates {
-            margin-bottom: 24px;
+            &_calculates {
+                margin-bottom: 24px;
                 .cost {
                     font-size: 24px;
+                    color: #222222;
                 }
             }
             &_calculate  {
                 font-size: 16px;
-                flex-grow: 1;
+                width: 50%;
                 & + & {
                     border-left: 2px solid rgba(107, 107, 107, 0.3);
+                    padding-left: 16px;
                     margin-left: 0;
                 }
                 a {
@@ -183,7 +154,7 @@
             }
             &_buttons {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 .button {
                     color: #494949;
                     &._active {
@@ -195,71 +166,67 @@
         &_upper {
             padding: 12px 0 20px 0;
             margin: 0;
-
             display: flex;
             flex-direction: column;
             align-items: center;
             &_name {
                 font-size: 28px;
-
             }
             &_series {
                 font-size: 54px;
-
             }
         }
-
-
     }
-
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
     .banner {
-        &_inner {
-        }
-
         &_upper {
+            padding-top: 16px;
             &_name {
                 font-size: 20px;
+                line-height: 26px;
             }
             &_series {
+                line-height: 40px;
                 font-size: 32px;
             }
         }
         &_lower {
             margin: 0 20px;
             &_calculates {
+                margin-bottom: 40px;
                 .cost {
                     font-size: 20px;
                 }
                 a {
-
                     color: #222222;
                     font-size: 12px;
                     line-height: 12px;
                 }
-
             }
             &_buttons {
-                display: block;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
                 .button {
                     width: 188px;
                     color: #494949;
                     &._active {
                         color: #FFFFFF;
                     }
-
                 }
                 .button + .button {
                     margin-left: 0;
                     margin-top: 16px;
-
                 }
             }
-
         }
-
-
     }
 }
-
+@media (max-width: 320px) {
+    .banner {
+        &_image_wrapper {
+            padding-top: 100%;
+        }
+    }
+}
