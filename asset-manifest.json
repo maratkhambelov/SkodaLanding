@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/SkodaLanding/static/css/main.16a9a3e5.chunk.css",
+    "main.js": "/SkodaLanding/static/js/main.723323e4.chunk.js",
+    "main.js.map": "/SkodaLanding/static/js/main.723323e4.chunk.js.map",
+    "runtime-main.js": "/SkodaLanding/static/js/runtime-main.efab60aa.js",
+    "runtime-main.js.map": "/SkodaLanding/static/js/runtime-main.efab60aa.js.map",
+    "static/js/2.0e7151c8.chunk.js": "/SkodaLanding/static/js/2.0e7151c8.chunk.js",
+    "static/js/2.0e7151c8.chunk.js.map": "/SkodaLanding/static/js/2.0e7151c8.chunk.js.map",
+    "index.html": "/SkodaLanding/index.html",
+    "precache-manifest.cf109d6bc764ae02e7be52c9ca922b20.js": "/SkodaLanding/precache-manifest.cf109d6bc764ae02e7be52c9ca922b20.js",
+    "service-worker.js": "/SkodaLanding/service-worker.js",
+    "static/css/main.16a9a3e5.chunk.css.map": "/SkodaLanding/static/css/main.16a9a3e5.chunk.css.map",
+    "static/js/2.0e7151c8.chunk.js.LICENSE": "/SkodaLanding/static/js/2.0e7151c8.chunk.js.LICENSE",
+    "static/media/app.scss": "/SkodaLanding/static/media/SKODANext-Regular.11ab7e35.woff",
+    "static/media/banner.scss": "/SkodaLanding/static/media/question-circle.f923d42f.svg",
+    "static/media/button.scss": "/SkodaLanding/static/media/download-white.0b35f903.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.efab60aa.js",
+    "static/js/2.0e7151c8.chunk.js",
+    "static/css/main.16a9a3e5.chunk.css",
+    "static/js/main.723323e4.chunk.js"
+  ]
+}
